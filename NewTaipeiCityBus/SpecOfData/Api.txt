@@ -1,0 +1,25 @@
+Query estimate arrival time
+http://data.ntpc.gov.tw/od/data/api/CE74A94B-36D2-4482-A25D-670625ED0678?$format=json
+
+EstimateTime:預估到站時間
+Memo:Memo
+RouteID:路線代碼
+StationId:站位代碼
+
+Query YouBike
+http://data.ntpc.gov.tw/od/data/api/54DDDC93-589C-4858-9C95-18B2046CC1FC?$format=json
+
+sno:站點代號
+sna:場站名稱(中文)
+tot:場站總停車格
+sbi:可借車位數
+sarea:場站區域(中文)
+mday:資料更新時間
+lat:緯度
+lng:經度
+ar:地址(中文)
+sareaen:場站區域(英文)
+snaen:場站名稱(英文)
+aren:地址(英文)
+bemp:可還空位數
+act:場站是否暫停營運
