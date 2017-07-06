@@ -1,25 +1,25 @@
-Query estimate arrival time
+ï»¿Query estimate arrival time
 http://data.ntpc.gov.tw/od/data/api/CE74A94B-36D2-4482-A25D-670625ED0678?$format=json
 
-EstimateTime:¹w¦ô¨ì¯¸®É¶¡
+EstimateTime:é ä¼°åˆ°ç«™æ™‚é–“
 Memo:Memo
-RouteID:¸ô½u¥N½X
-StationId:¯¸¦ì¥N½X
+RouteID:è·¯ç·šä»£ç¢¼
+StationId:ç«™ä½ä»£ç¢¼
 
 Query YouBike
 http://data.ntpc.gov.tw/od/data/api/54DDDC93-589C-4858-9C95-18B2046CC1FC?$format=json
 
-sno:¯¸ÂI¥N¸¹
-sna:³õ¯¸¦WºÙ(¤¤¤å)
-tot:³õ¯¸Á`°±¨®®æ
-sbi:¥i­É¨®¦ì¼Æ
-sarea:³õ¯¸°Ï°ì(¤¤¤å)
-mday:¸ê®Æ§ó·s®É¶¡
-lat:½n«×
-lng:¸g«×
-ar:¦a§}(¤¤¤å)
-sareaen:³õ¯¸°Ï°ì(­^¤å)
-snaen:³õ¯¸¦WºÙ(­^¤å)
-aren:¦a§}(­^¤å)
-bemp:¥iÁÙªÅ¦ì¼Æ
-act:³õ¯¸¬O§_¼È°±Àç¹B
+sno:ç«™é»ä»£è™Ÿ
+sna:å ´ç«™åç¨±(ä¸­æ–‡)
+tot:å ´ç«™ç¸½åœè»Šæ ¼
+sbi:å¯å€Ÿè»Šä½æ•¸
+sarea:å ´ç«™å€åŸŸ(ä¸­æ–‡)
+mday:è³‡æ–™æ›´æ–°æ™‚é–“
+lat:ç·¯åº¦
+lng:ç¶“åº¦
+ar:åœ°å€(ä¸­æ–‡)
+sareaen:å ´ç«™å€åŸŸ(è‹±æ–‡)
+snaen:å ´ç«™åç¨±(è‹±æ–‡)
+aren:åœ°å€(è‹±æ–‡)
+bemp:å¯é‚„ç©ºä½æ•¸
+act:å ´ç«™æ˜¯å¦æš«åœç‡Ÿé‹
