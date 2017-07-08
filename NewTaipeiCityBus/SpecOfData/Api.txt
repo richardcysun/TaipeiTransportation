@@ -1,12 +1,29 @@
-﻿Query estimate arrival time
-http://data.ntpc.gov.tw/od/data/api/CE74A94B-36D2-4482-A25D-670625ED0678?$format=json
+﻿///////////////////////////////////
+//Query bus estimate arrival time
+//////////////////////////////////
+
+//Old API
+There are two kind of spec, the old api and it can't prvide accurate status in off-service hours
+nnnn stands for bus route number
+http://data.ntpc.gov.tw/od/data/api/CE74A94B-36D2-4482-A25D-670625ED0678?$format=json&$filter=routeid eq nnnn
 
 EstimateTime:預估到站時間
 Memo:Memo
 RouteID:路線代碼
 StationId:站位代碼
 
-Query YouBike
+//New API
+This is new api and it's obviously much better and accurate
+http://data.ntpc.gov.tw/od/data/api/245793DB-0958-4C10-8D63-E7FA0D39207C?$format=json&$filter=RouteID eq nnnn
+
+RouteID :路線代碼(主路線ID)
+StopID:站牌代碼
+EstimateTime:預估到站剩餘時間（單位：秒）-1：尚未發車-2：交管不停靠-3：末班車已過-4：今日未營運
+GoBack 去返程 （0：去程 1：返程 2：尚未發車 3：末班已駛離去返程)
+
+//////////////////////////////////
+//Query YouBike
+//////////////////////////////////
 http://data.ntpc.gov.tw/od/data/api/54DDDC93-589C-4858-9C95-18B2046CC1FC?$format=json
 
 sno:站點代號
