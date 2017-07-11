@@ -12,14 +12,14 @@ stopID = raw_input("StopID: ").decode(sys.stdin.encoding or locale.getpreferrede
 conn = httplib.HTTPConnection("data.ntpc.gov.tw")
 
 qryString = "/od/data/api/245793DB-0958-4C10-8D63-E7FA0D39207C?$format=json&$filter=RouteID%20eq%20" + routeID
-print qryString.encode('utf8')
+#print qryString.encode('utf8')
 
 conn.request("GET",qryString)
 response = conn.getresponse()
 #print response.status, response.reason
 
 data = response.read()
-print len(data)
+#print len(data)
 
 if len(data) > 100:
     jBusArrival = json.loads(data)

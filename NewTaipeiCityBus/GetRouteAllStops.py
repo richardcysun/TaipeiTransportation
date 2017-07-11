@@ -20,8 +20,8 @@ data = response.read()
 if len(data) > 100:
     jAllStops = json.loads(data)
 
-    for route in jAllStops:
-        print "¯¸µP:",route['nameZh'], "Id:", route['Id']
+    for stop in jAllStops:
+        print "¯¸µP:",stop['nameZh'], "Id:", stop['Id']
 else:
     print "Not found"
 
