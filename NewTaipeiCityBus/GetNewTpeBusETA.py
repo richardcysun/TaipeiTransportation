@@ -60,13 +60,13 @@ def GetStopETA(routeId, stopId):
         #print jBusArrival[0]['StopID'], jBusArrival[0]['GoBack'], jBusArrival[0]['EstimateTime']
 
         if( jBusArrival[0]['EstimateTime'] == "-1" ):
-            stopETA = "尚未發車"
+            stopETA = u"尚未發車"
         elif( jBusArrival[0]['EstimateTime'] == "-2" ):
-            stopETA = "交管不停靠"                
+            stopETA = u"交管不停靠"                
         elif( jBusArrival[0]['EstimateTime'] == "-3" ):
-            stopETA = "末班車已過"
+            stopETA = u"末班車已過"
         elif( jBusArrival[0]['EstimateTime'] == "-4" ):
-            stopETA = "今日未營運"                
+            stopETA = u"今日未營運"                
         else:
             goBack = ""
             stopETA = jBusArrival[0]['EstimateTime']

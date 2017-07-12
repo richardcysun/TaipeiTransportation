@@ -76,7 +76,7 @@ GoBack 去返程 （0：去程 1：返程 2：尚未發車 3：末班已駛離�
 ///////////////////////////////////////
 //Query YouBike
 ///////////////////////////////////////
-http://data.ntpc.gov.tw/od/data/api/54DDDC93-589C-4858-9C95-18B2046CC1FC?$format=json
+http://data.ntpc.gov.tw/od/data/api/54DDDC93-589C-4858-9C95-18B2046CC1FC?$format=json&$filter=sna eq abcd
 
 sno:站點代號
 sna:場站名稱(中文)
