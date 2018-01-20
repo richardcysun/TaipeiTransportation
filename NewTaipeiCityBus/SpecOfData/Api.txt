@@ -2,7 +2,7 @@
 //Query bus name and internal route ID
 ///////////////////////////////////////
 
-http://data.ntpc.gov.tw/od/data/api/67BB3C2B-E7D1-43A7-B872-61B2F082E11B?$format=json&$filter=nameZh eq XYZ
+http://data.ntpc.gov.tw/od/data/api/67BB3C2B-E7D1-43A7-B872-61B2F082E11B?$format=json&$filter=nameZh eq {route}
 
 Id:路線代碼
 providerId:業者代碼
@@ -40,11 +40,14 @@ segmentBufferEn:分段緩衝區(英文)
 ticketPriceDescriptionZh:票價描述(中文)
 ticketPriceDescriptionEn:票價描述(英文)
 
+[{"Id":"16581","providerId":"16176","providerName":"臺北客運","nameZh":"275","nameEn":"275","pathAttributeId":"157623","pathAttributeName":"275(新北市)","pathAttributeEname":"275","buildPeriod":"10","departureZh":"宏國德霖科技大學","departureEn":"De Lin Institute of Technology","destinationZh":"松山機場","destinationEn":"Taipei Songshan Airport","realSequence":"99","distance":"99","goFirstBusTime":"0530","backFirstBusTime":"0530","goLastBusTime":"2200","backLastBusTime":"2200","peakHeadway":"0710","holidayHeadwayDesc":"","offPeakHeadway":"1520","busTimeDesc":"","holidayGoFirstBusTime":"0530","holidayBackFirstBusTime":"0530","holidayGoLastBusTime":"2200","holidayBackLastBusTime":"2200","holidayBusTimeDesc":"","headwayDesc":"","holidayPeakHeadway":"2030","holidayOffPeakHeadway":"2030","segmentBufferZh":"公館-成功國宅","segmentBufferEn":"Gongguan-Chenggong Public Housing","ticketPriceDescriptionZh":"二段票","ticketPriceDescriptionEn":"Charge for 2 sections"}]
+
+
 ///////////////////////////////////////
 //Query all stops of specific route
 ///////////////////////////////////////
 
-http://data.ntpc.gov.tw/od/data/api/62519D6B-9B6D-43E1-BFD7-D66007005E6F?$format=json&$filter=routeId eq nnnn
+http://data.ntpc.gov.tw/od/data/api/62519D6B-9B6D-43E1-BFD7-D66007005E6F?$format=json&$filter=routeId eq {id} and nameZh eq {name}
 
 Id :站牌代碼
 RouteID:所屬路線代碼(主路線ID)
@@ -61,6 +64,10 @@ showLon:顯示用經度
 showLat:顯示用緯度
 vector:向量(0~359，預設為空白)
 
+[{"Id":"126550","routeId":"16461","nameZh":"中和農會(連城路)","nameEn":"Zhonghe Farmers Association","seqNo":"102","pgp":"0","goBack":"1","longitude":"121.4981","latitude":"25.00188333","address":null,"stopLocationId":"10002","showLon":"121.4981","showLat":"25.00188333","vector":"999"},{"Id":"126496","routeId":"16461","nameZh":"中和農會(連城路)","nameEn":"Zhonghe Farmers Association","seqNo":"47","pgp":"0","goBack":"0","longitude":"121.4989667","latitude":"25.00225","address":null,"stopLocationId":"10001","showLon":"121.4989667","showLat":"25.00225","vector":"999"}]
+[{"Id":"126534","routeId":"16461","nameZh":"鳳雛公園","nameEn":"Fengchu Park","seqNo":"86","pgp":"0","goBack":"1","longitude":"121.5485833","latitude":"25.02573333","address":null,"stopLocationId":"13115","showLon":"121.5485833","showLat":"25.02573333","vector":null}]
+
+
 ///////////////////////////////////////
 //Query bus estimate arrival time
 ///////////////////////////////////////
@@ -72,6 +79,9 @@ RouteID :路線代碼(主路線ID)
 StopID:站牌代碼
 EstimateTime:預估到站剩餘時間（單位：秒）-1：尚未發車-2：交管不停靠-3：末班車已過-4：今日未營運
 GoBack 去返程 （0：去程 1：返程 2：尚未發車 3：末班已駛離去返程)
+
+[{"RouteID":"16581","StopID":"138154","EstimateTime":"112","GoBack":"1"}]
+
 
 ///////////////////////////////////////
 //Query YouBike
